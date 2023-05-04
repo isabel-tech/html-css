@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Modelo de Caixas</title>
+	<style>
+		h1{
+			background-color: lightgray;
+			height: 372px;
+			width: 372px;
+
+			padding: 10px;
+			/*
+			Esta é a forma reduzida para:
+			padding-top: 10px;
+			padding-right: 10px;
+			padding-bottom: 10px;
+			padding-left: 10px;
+			*/
+
+			border: 10px solid rgb(187, 173, 173);
+			/*
+			Esta é a forma reduzida para:
+			border-width: 10px;
+			border-style: solid;
+			border-color: rgb(187, 173, 173);
+			*/
+
+			outline: 5px dashed rgb(117, 85, 103);
+			/*
+			Esta é a forma reduzida para:
+			outline-width: 5px;
+			outline-style: dashed;
+			outline-color: rgb(117, 85, 103);
+			*/
+
+			margin: 20px auto 30px auto;
+			/*
+			Esta é a forma reduzida para:
+			margin-top: 20px;
+			margin-right: auto;
+			margin-bottom: 30px;
+			margin-left: auto;
+			*/
+		}
+
+		a{
+			border: 3px solid salmon;
+			/*
+			Esta é a forma reduzida para:
+			border-width: 3px;
+			border-style: solid;
+			border-color: salmon;
+
+			*/ 
+			
+			padding: 5px;
+			/*
+			Esta é a forma reduzida para:
+			padding-top: 5px;
+			padding-right: 5px;
+			padding-bottom: 5px;
+			padding-left: 5px;
+			*/
+		}
+	</style>
+</head>
+<body>
+	<h1>Exemplo de caixa box-level</h1>
+	<p>Parágrafos são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

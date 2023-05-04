@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="pt-br">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Reproduzindo Áudio</title>
+	</head>
+	<body>
+		<h1>Reproduzindo Áudio</h1>
+		<p>Ouça abaixo um áudio reproduzido em HTML5:</p>
+		<audio src="midia/Jingle Bells - Kevin MacLeod.mp3" controls autoplay></audio>
+		<p font-size="9px">
+			Jingle Bells de Kevin MacLeod é licenciada de acordo com a licença Atribuição 4.0 da Creative Commons.https://creativecommons.org/licenses/by/4.0/
+			<br>
+			Fonte: http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100187
+			Artista: http://incompetech.com/
+		</p>
+		<!--Ou-->
+
+		<audio preload="metadata" autoplay controls loop>
+			<source src="midia/Jingle Bells - Kevin MacLeod.mp3" type="audio/mpeg">
+			<source src="midia/Jingle Bells - Kevin MacLeod.ogg" type="audio/ogg">
+			<source src="midia/Jingle Bells - Kevin MacLeod.wav" type="audio/wav">
+			<p>
+				Infelizmente seu navegador não consegue reproduzir esse áudio. 
+				<a href="midia/Jingle Bells - Kevin MacLeod.mp3">Clique aqui para baixar o arquivo MP3.</a>
+			</p>
+		</audio>
+	</body>
+</html>
