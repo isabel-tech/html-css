@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+@font-face {
+	font-family: 'Passion_One';
+	src: url();
+}
+
+h1{
+	background-color: black;
+	color: white;
+}
+
+
