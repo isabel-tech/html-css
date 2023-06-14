@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tabela 1</title>
+	<style>
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		table{
+			width: 400px;
+			border-collapse: collapse;
+		}
+		
+		tr{
+			background-color: rgb(240, 232, 163) ;
+		}
+
+		td{
+			border: 1px solid black;
+			padding: 8px;
+		}
+
+		td.dado1{
+			background-color: aquamarine;
+		}
+
+		td.dado2{
+			background-color: rgb(186, 132, 236);
+		}
+
+		td.dado3{
+			background-color: #ee76b0;
+		}
+	</style>
+</head>
+<body>
+	<h1>Minha primeira tabela</h1>
+	<!-- 
+		HIERARQUIA DE TABELAS (simples)
+		TABLE = tabela
+			TABLE ROW = linha de tabela
+				TABLE HEADER = cabeçalho de tabela
+				TABLE DATA = dado de tabela
+	-->
+	<table>
+		<tr> <!-- Primeira linha -->
+			<td class="dado1">A1</td>			
+			<td class="dado3">B1</td>
+			<td class="dado3">C1</td>
+			<td class="dado2">D1</td>
+		</tr>
+		<tr> <!-- Segunda linha -->
+			<td>A2</td> 
+			<td class="dado1">B2</td>
+			<td class="dado2">C2</td>
+			<td>D2</td>
+		</tr>
+
+		<tr> <!-- Terceira linha -->
+			<td>A3</td>
+			<td class="dado2">B3</td>
+			<td class="dado1">C3</td>
+			<td>D3</td>
+		</tr>
+
+		<tr> <!-- Quarta linha -->
+			<td class="dado2">A4</td>
+			<td class="dado3">B4</td>
+			<td class="dado3">C4</td>
+			<td class="dado1">D4</td>
+		</tr>
+	</table>
+</body>
+</html>
