@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Exercício de Tabela</title>
 	<style>
-		body{
+		body {
 			font-family: Arial, Helvetica, sans-serif;
 		}
 
-		table{
+		table {
 			width: 500px;
 			border-collapse: collapse;
 		}
 
-		caption{
+		caption {
 			font-size: 1.1em;
 			font-weight: bolder;
 			padding: 8px;
 		}
 
-		th, td{
+		th, td {
 			border: 1px solid black;
 			padding: 8px;
 		}
+
+		col.nome{
+			background-color: aquamarine;
+		}
+
+		col.grupo{
+			background-color: rgb(247, 116, 247);
+		}
+
+		col.profissao{
+			background-color: rgb(248, 205, 153);
+		}
 	</style>
 </head>
+
 <body>
 	<h1>Exercício de Tabela</h1>
-	
+
 	<table>
+		<colgroup>
+			<col class="nome">
+			<col class="grupo" span="2">
+			<col class="profissao">
+		</colgroup>
 		<caption>Cadastro</caption>
 		<thead>
 			<tr>
@@ -38,14 +57,48 @@
 				<th scope="col">Idade</th>
 				<th scope="col">Profissão</hh>
 			</tr>
+		</thead>
 
+		<tbody>
 			<tr>
 				<td>Ana Maria</td>
 				<td>F</td>
 				<td>25</td>
 				<td>Jornalista</td>
 			</tr>
-		</thead>
+			<tr>
+				<td>Cláudio</td>
+				<td>M</td>
+				<td>28</td>
+				<td>Programador</td>
+			</tr>
+			<tr>
+				<td>Isabel</td>
+				<td>F</td>
+				<td>13</td>
+				<td>Estudante</td>
+			</tr>
+			<tr>
+				<td>Hélio</td>
+				<td>M</td>
+				<td>19</td>
+				<td>Vendedor</td>
+			</tr>
+			<tr>
+				<td>Maria</td>
+				<td>F</td>
+				<td>39</td>
+				<td>Médica</td>
+			</tr>
+			<tr>
+				<td>Otávio</td>
+				<td>M</td>
+				<td>22</td>
+				<td>Nutricionista</td>
+			</tr>
+		</tbody>
+
 	</table>
 </body>
+
 </html>
