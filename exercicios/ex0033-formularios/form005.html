@@ -9,7 +9,17 @@
 	<h1>Exemplo de Formulário</h1>
 	<form action="cadastro.php" method="get" autocomplete="on">
 		<fieldset>
-			
+			<legend>Sexo</legend>
+
+			<input type="radio" name="sexo" id="imas" value="M">
+			<label for="imas">Masculino</label><br>
+
+			<input type="radio" name="sexo" id="ifem" value="F" checked>
+			<label for="ifem">Feminino</label>
+			<!-- Os botões de 'radio' têm que ter o mesmo 'name' para que você consiga marcar apenas uma das opções -->
+		</fieldset>
+
+		<fieldset>
 			<legend>Esportes Favoritos</legend>
 
 			<input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label><br>
