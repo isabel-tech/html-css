@@ -7,10 +7,11 @@
 </head>
 <body>
 	<h1>Exemplo de Formulário</h1>
-	<form action="cadastro.php" method="get" autocomplete="on">
+	<form action="cadastro.php" method="post" autocomplete="on">
 		<p>
 			<label for="iest">Estado</label>
 			<select name="estado" id="iest">
+				<option value=""selected>---Escolha---</option>
 				<!-- Estados da Região Norte -->
 				<optgroup label="Região Norte">
 					<option value="AC">Acre</option>
@@ -61,6 +62,27 @@
 			</select>
 			<!-- O select serve para, quando clicar no 'botão', uma lista ser feita-->
 		</p>
+
+		<p>
+			<label for="iprof">Profissão: </label>
+			<input type="text" name="prof" id="iprof" list="lstprof">
+			<datalist id="lstprof">
+				<option>Administrador</option>
+				<option>Contabilista</option>
+				<option>Desenvolvedor</option>
+				<option>Professor</option>
+			</datalist>
+		</p>
+
+		<p>
+			<label for="imsg">Mensagem:</label><br>
+			<textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Escreva sua mensagem aqui..."></textarea>
+			<!-- cols: coluna 
+				 rows: linhas
+			-->
+		</p>
+
+		<!-- Todo formulário que usa o método 'get' possui o limite de 3 mil bites para poder enviar. -->
 
 		<p>
             <input type="submit" value="Enviar">
