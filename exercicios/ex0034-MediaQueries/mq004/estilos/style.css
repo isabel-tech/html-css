@@ -40,6 +40,14 @@ img{
 	margin: auto;
 }
 
+p{
+	text-align: center;
+	font-size: 18px;
+	margin-top: 10px;
+	color: black;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.507);
+}
+
 img#phone{ display: block }
 img#tablet{ display: none }
 img#print{ display: none }
